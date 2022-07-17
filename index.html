@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 20 - Simulador de Financiamento Part1</title>
+    <title>Simulador de Financiamento</title>
 
     <style>
         body{
@@ -12,10 +12,15 @@
             color: white;
             font: 14pt Tahoma;
         }
+        table, tr, th{
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
-    <h1>Aula 20 - Simulador de Financiamento Part1</h1>
+    <h1>Simulador de Financiamento Part4</h1>
 
     <h2>Simulador de Financiameto com Sistema de Amortização Constante (SAC)</h2>
     <input id="textoValor" type="text" placeholder="Valor do Bem"><br>
@@ -29,6 +34,21 @@
         <option value="2">3 meses</option>
         <option value="3">4 meses</option>
     </select>
+    <p></p>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Valor da Parcela</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Saldo devedor</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+
+        </tbody>
+    </table>
     
 
     <script type="module" src="index.js"></script>
