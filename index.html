@@ -10,17 +10,20 @@
         body{
             background: rgb(4, 4, 45);
             color: white;
-            font: 14pt Tahoma;
+            font: 11pt Tahoma;
         }
-        table, tr, th{
-            border: 1px solid white;
+        tr:nth-child(even){
+            background-color: gray;
+        }
+        table, th, td{
+            border: 2px solid white;
             border-collapse: collapse;
             padding: 15px;
         }
     </style>
 </head>
 <body>
-    <h1>Simulador de Financiamento Part4</h1>
+    <h1>Simulador de Financiamento</h1>
 
     <h2>Simulador de Financiameto com Sistema de Amortização Constante (SAC)</h2>
     <input id="textoValor" type="text" placeholder="Valor do Bem"><br>
